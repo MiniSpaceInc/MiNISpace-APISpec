@@ -1,0 +1,14 @@
+post:
+  tags:
+    - Events
+  summary: Search for page of events
+  description: Searches for events with provided filters and sorting, returns a single pageable object of events.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ..\components\schemas\EventSearchDetails.yaml
+  responses:
+    "200":
+      description: "OK"

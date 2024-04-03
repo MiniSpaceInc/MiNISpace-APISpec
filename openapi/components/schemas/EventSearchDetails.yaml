@@ -1,0 +1,12 @@
+type: object
+properties:
+  name:
+    type: string
+  organizer:
+    type: string
+  dateFrom:
+    type: string
+  dateTo:
+    type: string
+  pageable:
+    $ref: ./Pageable.yaml

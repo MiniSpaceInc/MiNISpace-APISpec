@@ -53,6 +53,8 @@ servers:
 paths:
   /events:
     $ref: paths/events.yaml
+  /events/search:
+    $ref: paths/events@search.yaml
 # components:
 #   securitySchemes:
 #     main_auth:
