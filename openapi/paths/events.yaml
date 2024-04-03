@@ -1,6 +1,6 @@
 post:
   tags:
-    - Event
+    - Events
   summary: Create a new event
   description: Creates a new event with given parameters.
   requestBody:

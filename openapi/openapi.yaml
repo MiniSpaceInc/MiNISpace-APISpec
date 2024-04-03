@@ -46,13 +46,13 @@ externalDocs:
   description: Find out how to create a GitHub repo for your OpenAPI definition.
   url: 'https://github.com/Rebilly/generator-openapi-repo'
 tags:
-  - name: Event
+  - name: Events
     description: Event operations
 servers:
   - url: 'http://localhost:8080/api'
 paths:
-  /event:
-    $ref: paths/event.yaml
+  /events:
+    $ref: paths/events.yaml
 # components:
 #   securitySchemes:
 #     main_auth:
