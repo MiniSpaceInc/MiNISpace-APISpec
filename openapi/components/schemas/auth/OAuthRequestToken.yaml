@@ -1,0 +1,5 @@
+type: object
+properties:
+  callbackUrl:
+    type: string
+    description: Url user is redirected to after log in

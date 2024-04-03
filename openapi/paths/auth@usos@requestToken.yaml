@@ -1,0 +1,20 @@
+post:
+  tags:
+    - Auth
+  summary: Request a request token with an url to logging page
+  description: |
+    Returns a request token and request token secret with an url with logging page obtained from USOS api.
+    After log in the user is given a verifier which is needed to obtain the access token.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/auth/OAuthRequestToken.yaml
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/auth/OAuthTokenResponse.yaml

@@ -48,6 +48,8 @@ externalDocs:
 tags:
   - name: Events
     description: Event operations
+  - name: Auth
+    description: Operations needed for authentication
 servers:
   - url: 'http://localhost:8080/api'
 paths:
@@ -55,6 +57,10 @@ paths:
     $ref: paths/events.yaml
   /events/search:
     $ref: paths/events@search.yaml
+  /auth/usos/requestToken:
+    $ref: paths/auth@usos@requestToken.yaml
+  /auth/usos/jwt:
+    $ref: paths/auth@usos@jwt.yaml
 # components:
 #   securitySchemes:
 #     main_auth:

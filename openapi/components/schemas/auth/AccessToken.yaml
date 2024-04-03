@@ -1,0 +1,5 @@
+type: object
+properties:
+  accessToken:
+    type: string
+    description: Json web token allowing to interact with MiNISpace api

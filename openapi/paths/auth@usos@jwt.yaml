@@ -1,0 +1,18 @@
+post:
+  tags:
+    - Auth
+  summary: Request an access token
+  description: Returns a json web token which allows to interact with MiNISpace api.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/auth/OAuthAccessToken.yaml
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/auth/AccessToken.yaml
