@@ -8,7 +8,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: ..\components\schemas\EventSearchDetails.yaml
+          $ref: ../components/schemas/events/EventSearchDetails.yaml
   responses:
     "200":
       description: "OK"
@@ -21,6 +21,6 @@ post:
                   content:
                     type: array
                     items:
-                      $ref: ..\components\schemas\Event.yaml
-              - $ref: ..\components\schemas\PageableResponse.yaml
+                      $ref: ../components/schemas/Events/Event.yaml
+              - $ref: ../components/schemas/common/PageableResponse.yaml
                 

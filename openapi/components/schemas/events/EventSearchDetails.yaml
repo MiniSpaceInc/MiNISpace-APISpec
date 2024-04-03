@@ -5,8 +5,8 @@ properties:
   organizer:
     type: string
   dateFrom:
-    type: string
+    $ref: ../common/DateTime.yaml
   dateTo:
-    type: string
+    $ref: ../common/DateTime.yaml
   pageable:
-    $ref: ./Pageable.yaml
+    $ref: ../common/Pageable.yaml

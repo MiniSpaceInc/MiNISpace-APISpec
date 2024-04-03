@@ -9,6 +9,6 @@ properties:
   organizerId:
     type: integer
   date:
-    type: string
+    $ref: ../common/DateTime.yaml
   description:
     type: string
