@@ -1,0 +1,14 @@
+type: object
+properties:
+  id:
+    type: integer
+  uuid:
+    type: string
+  name:
+    type: string
+  organizerId:
+    type: integer
+  date:
+    type: string
+  description:
+    type: string

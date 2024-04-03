@@ -1,0 +1,14 @@
+post:
+  tags:
+    - Event
+  summary: Create a new event
+  description: Creates a new event with given parameters.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ..\components\schemas\Event.yaml
+  responses:
+    "200":
+      description: "OK"
