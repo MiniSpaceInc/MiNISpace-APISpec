@@ -12,3 +12,15 @@ post:
   responses:
     "200":
       description: "OK"
+      content:
+        application/json:
+          schema:
+            allOf:
+              - type: object
+                properties:
+                  content:
+                    type: array
+                    items:
+                      $ref: ..\components\schemas\Event.yaml
+              - $ref: ..\components\schemas\PageableResponse.yaml
+                

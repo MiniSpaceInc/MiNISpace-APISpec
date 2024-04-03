@@ -1,0 +1,50 @@
+type: object
+properties:
+  pageable:
+    type: object
+    properties:
+      pageNumber:
+        type: integer
+      pageSize:
+        type: integer
+      sort:
+        type: object
+        properties:
+          empty:
+            type: boolean
+          sorted:
+            type: boolean
+          unsorted:
+            type: boolean
+      offset:
+        type: integer
+      paged:
+        type: boolean
+      unpaged:
+        type: boolean
+  last:
+    type: boolean
+  totalPages:
+    type: integer
+  totalElements:
+    type: integer
+  size:
+    type: integer
+  number:
+    type: integer
+  sort:
+    type: object
+    properties:
+      empty:
+        type: boolean
+      sorted:
+        type: boolean
+      unsorted:
+        type: boolean
+  numberOfElements:
+    type: integer
+  first:
+    type: boolean
+  empty:
+    type: boolean
+  
