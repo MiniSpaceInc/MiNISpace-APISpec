@@ -4,6 +4,7 @@ properties:
     type: integer
   uuid:
     type: string
+    format: uuid
   name:
     type: string
   organizerId:
