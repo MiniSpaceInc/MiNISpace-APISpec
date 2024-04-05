@@ -1,0 +1,15 @@
+# parameters:
+#   - $ref: ../components/parameters/common/Uuid.yaml
+
+get:
+  tags:
+    - Events
+  summary: Get event by uuid
+  description: Gets event corresponding to provided uuid.
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Events/Event.yaml

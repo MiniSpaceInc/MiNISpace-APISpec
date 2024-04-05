@@ -55,6 +55,8 @@ servers:
 paths:
   /events:
     $ref: paths/events.yaml
+  /events/{uuid}:
+    $ref: paths/events@{uuid}.yaml
   /events/search:
     $ref: paths/events@search.yaml
   /auth/usos/requestToken:

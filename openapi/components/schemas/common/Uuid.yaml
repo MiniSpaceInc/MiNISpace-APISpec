@@ -1,0 +1,7 @@
+Uuid:
+  description: Universal unique identifier of an object.
+  name: uuid
+  required: true
+  schema:
+    type: string
+    format: uuid
