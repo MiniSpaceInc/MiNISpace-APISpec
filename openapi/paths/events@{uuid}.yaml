@@ -1,5 +1,5 @@
-# parameters:
-#   - $ref: ../components/parameters/common/Uuid.yaml
+parameters:
+  - $ref: ../components/parameters/common/Uuid.yaml
 
 get:
   tags:

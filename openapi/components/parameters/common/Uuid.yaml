@@ -1,8 +1,7 @@
-Uuid:
-  description: Universal unique identifier of an object.
-  name: uuid
-  in: path
-  required: true
-  schema:
-    type: string
-    format: uuid
+description: Universal unique identifier of the object.
+name: uuid
+in: path
+required: true
+schema:
+  type: string
+  format: uuid

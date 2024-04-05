@@ -1,0 +1,17 @@
+type: object
+properties:
+  id:
+    type: integer
+  uuid:
+    type: string
+    format: uuid
+  eventId:
+    type: integer
+    description: Id of the event the post corresponds to.
+  authorId:
+    type: integer
+    description: Id of the user that created the post.
+  datePosted:
+    $ref: ../common/DateTime.yaml
+  content:
+    type: string

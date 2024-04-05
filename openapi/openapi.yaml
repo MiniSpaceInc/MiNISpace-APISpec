@@ -50,6 +50,8 @@ tags:
     description: Event operations
   - name: Auth
     description: Operations needed for authentication
+  - name: Posts
+    description: Post operations
 servers:
   - url: 'http://localhost:8080/api'
 paths:
@@ -59,6 +61,8 @@ paths:
     $ref: paths/events@{uuid}.yaml
   /events/search:
     $ref: paths/events@search.yaml
+  /posts:
+    $ref: paths/posts.yaml
   /auth/usos/requestToken:
     $ref: paths/auth@usos@requestToken.yaml
   /auth/usos/jwt:
