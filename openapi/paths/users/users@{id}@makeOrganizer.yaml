@@ -1,0 +1,10 @@
+parameters:
+  - $ref: ../../components/parameters/common/Id.yaml
+post:
+  tags:
+    - Users
+  summary: Assign a user the organizer role
+  description: Assigns the organizer role to the user with given userId.
+  responses:
+    "200":
+      description: "OK"

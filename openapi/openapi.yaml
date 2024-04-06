@@ -54,6 +54,8 @@ tags:
     description: Post operations
   - name: OrganizingUnits
     description: Operations to manage organizing units
+  - name: Users
+    description: Operations to manage users
 servers:
   - url: 'http://localhost:8080/api'
 paths:
@@ -63,6 +65,8 @@ paths:
     $ref: paths/events/events@{uuid}.yaml
   /events/search:
     $ref: paths/events/events@search.yaml
+  /users/{id}/makeOrganizer:
+    $ref: paths/users/users@{id}@makeOrganizer.yaml
   /posts:
     $ref: paths/posts/posts.yaml
   /organizingUnits:
