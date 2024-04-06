@@ -52,6 +52,8 @@ tags:
     description: Operations needed for authentication
   - name: Posts
     description: Post operations
+  - name: OrganizingUnits
+    description: Operations to manage organizing units
 servers:
   - url: 'http://localhost:8080/api'
 paths:
@@ -63,6 +65,8 @@ paths:
     $ref: paths/events/events@search.yaml
   /posts:
     $ref: paths/posts/posts.yaml
+  /organizingUnits:
+    $ref: paths/organizingUnits/organizingUnits.yaml
   /auth/usos/requestToken:
     $ref: paths/auth/auth@usos@requestToken.yaml
   /auth/usos/jwt:
