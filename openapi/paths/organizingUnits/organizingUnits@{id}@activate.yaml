@@ -1,0 +1,10 @@
+parameters:
+  - $ref: ../../components/parameters/common/Id.yaml
+put:
+  tags:
+    - OrganizingUnits
+  summary: Activate an organizing unit
+  description: Sets **isActive** flag in the organizing unit referenced by id to **true**.
+  responses: 
+    "200":
+      description: "OK"
