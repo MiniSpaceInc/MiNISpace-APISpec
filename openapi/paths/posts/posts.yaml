@@ -14,4 +14,4 @@ get:
       description: "OK"
       content:
         application/json:
-          $ref: ../components/schemas/posts/Post.yaml
+          $ref: ../../components/schemas/posts/Post.yaml

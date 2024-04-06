@@ -8,11 +8,11 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/auth/OAuthAccessToken.yaml
+          $ref: ../../components/schemas/auth/OAuthAccessToken.yaml
   responses:
     "200":
       description: "OK"
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/auth/AccessToken.yaml
+            $ref: ../../components/schemas/auth/AccessToken.yaml
