@@ -8,3 +8,11 @@ post:
   responses:
     "200":
       description: "OK"
+delete:
+  tags:
+    - Users
+  summary: Remove the organizer role from a user
+  description: Removes the organizer role from the user referenced by id.
+  responses:
+    "200":
+      description: "OK"
