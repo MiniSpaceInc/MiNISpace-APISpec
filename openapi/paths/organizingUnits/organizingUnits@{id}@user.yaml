@@ -1,0 +1,16 @@
+parameters:
+  - $ref: ../../components/parameters/common/Id.yaml
+  - name: userId
+    in: query
+    required: true
+    schema:
+      type: integer
+
+post:
+  tags:
+    - OrganizingUnits
+  summary: Add a user to an organizing unit
+  description: Adds a user to an organizing unit
+  responses:
+    "200":
+      description: "OK"
