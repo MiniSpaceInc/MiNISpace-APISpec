@@ -71,6 +71,8 @@ paths:
     $ref: paths/posts/posts.yaml
   /organizingUnits:
     $ref: paths/organizingUnits/organizingUnits.yaml
+  /organizingUnits/organizer:
+    $ref: paths/organizingUnits/organizingUnits@organizer.yaml
   /organizingUnits/{id}/user:
     $ref: paths/organizingUnits/organizingUnits@{id}@user.yaml
   /organizingUnits/{id}/activate:
