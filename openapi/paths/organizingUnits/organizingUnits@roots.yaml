@@ -1,0 +1,14 @@
+get:
+  tags:
+    - OrganizingUnits
+  summary: Get root organizing units
+  description: Gets all organizing units which do not have a parent.
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../../components/schemas/organizingUnits/OrganizingUnit.yaml

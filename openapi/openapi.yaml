@@ -79,6 +79,10 @@ paths:
     $ref: paths/organizingUnits/organizingUnits@{id}@activate.yaml
   /organizingUnits/{id}/deactivate:
     $ref: paths/organizingUnits/organizingUnits@{id}@deactivate.yaml
+  /organizingUnits/roots:
+    $ref: paths/organizingUnits/organizingUnits@roots.yaml
+  /organizingUnits/{id}/children:
+    $ref: paths/organizingUnits/organizingUnits@{id}@children.yaml
   /auth/usos/requestToken:
     $ref: paths/auth/auth@usos@requestToken.yaml
   /auth/usos/jwt:
