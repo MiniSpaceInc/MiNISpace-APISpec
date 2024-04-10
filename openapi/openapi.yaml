@@ -67,6 +67,8 @@ paths:
     $ref: paths/events/events@search.yaml
   /users/{id}/organizer:
     $ref: paths/users/users@{id}@organizer.yaml
+  /users/search:
+    $ref: paths/users/users@search.yaml
   /posts:
     $ref: paths/posts/posts.yaml
   /organizingUnits:

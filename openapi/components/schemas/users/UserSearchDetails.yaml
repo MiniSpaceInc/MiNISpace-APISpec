@@ -1,0 +1,7 @@
+type: object
+properties:
+  name:
+    type: string
+    description: Name of the user - may be a part of their first name or last name or parts of both.
+  pageable:
+    $ref: ../common/Pageable.yaml
