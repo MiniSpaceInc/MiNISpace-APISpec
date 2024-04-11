@@ -9,6 +9,3 @@ properties:
   parentId:
     type: integer
     description: Id of a parent organizing unit
-  isLeaf:
-    type: boolean
-    description: True means that this organizing units does not have children

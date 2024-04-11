@@ -1,0 +1,7 @@
+allOf:
+  - $ref: OrganizingUnit.yaml
+  - type: object
+    properties:
+      isLeaf:
+        type: boolean
+        description: True means that this organizing units does not have children
