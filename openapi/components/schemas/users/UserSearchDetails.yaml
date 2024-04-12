@@ -3,5 +3,7 @@ properties:
   name:
     type: string
     description: Name of the user - may be a part of their first name or last name or parts of both.
+  studentNumber:
+    type: integer
   pageable:
     $ref: ../common/Pageable.yaml
