@@ -7,8 +7,8 @@ properties:
     format: uuid
   name:
     type: string
-  organizerId:
-    type: integer
+  organizingUnit:
+    $ref: ../organizingUnits/OrganizingUnit.yaml
   date:
     $ref: ../common/DateTime.yaml
   description:
