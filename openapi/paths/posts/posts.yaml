@@ -15,3 +15,20 @@ get:
       content:
         application/json:
           $ref: ../../components/schemas/posts/Post.yaml
+post:
+  tags:
+    - Posts
+  description: Registers a new post.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/posts/RegisterPost.yaml
+  responses:
+    "200":
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/posts/Post.yaml
+            

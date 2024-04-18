@@ -71,6 +71,8 @@ paths:
     $ref: paths/users/users@search.yaml
   /posts:
     $ref: paths/posts/posts.yaml
+  /posts/{postId}:
+    $ref: paths/posts/posts@{postId}.yaml
   /organizingUnits:
     $ref: paths/organizingUnits/organizingUnits.yaml
   /organizingUnits/organizer:
