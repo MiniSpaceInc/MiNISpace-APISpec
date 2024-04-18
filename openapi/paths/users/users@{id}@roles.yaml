@@ -5,6 +5,14 @@ post:
     - Users
   summary: Assign a user the organizer role
   description: Assigns the organizer role to the user with given userId.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: array
+          items:
+            $ref: ../../components/schemas/users/UserRole.yaml
   responses:
     "200":
       description: "OK"
@@ -13,6 +21,14 @@ delete:
     - Users
   summary: Remove the organizer role from a user
   description: Removes the organizer role from the user referenced by id.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: array
+          items:
+            $ref: ../../components/schemas/users/UserRole.yaml
   responses:
     "200":
       description: "OK"
