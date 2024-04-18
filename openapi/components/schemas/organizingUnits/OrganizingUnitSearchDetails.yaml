@@ -1,0 +1,12 @@
+type: object
+description: Object to search given organizing unit
+properties:
+  name:
+    type: string
+  pageable:
+    $ref: ../common/Pageable.yaml
+  hasParent:
+    type: boolean
+  parentId:
+    type: integer
+    format: int64

@@ -1,0 +1,23 @@
+parameters:
+  - $ref: ../components/parameters/common/Id.yaml
+
+get:
+  tags:
+    - Posts
+  summary: Get post by id
+  description: Gets post corresponding to provided id.
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/posts/Post.yaml
+delete:
+  tags:
+    - Posts
+  summary: Deletes post by id
+  description: Deletes post corresponding to provided id.
+  responses:
+    "200":
+      description: "OK"

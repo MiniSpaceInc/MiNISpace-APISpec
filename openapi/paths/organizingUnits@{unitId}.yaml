@@ -1,0 +1,15 @@
+parameters:
+  - $ref: ../components/parameters/common/Id.yaml
+
+get:
+  tags:
+    - OrganizingUnits
+  summary: Get organizing unit by id
+  description: Gets organizing unit corresponding to provided id.
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/organizingUnits/OrganizingUnit.yaml

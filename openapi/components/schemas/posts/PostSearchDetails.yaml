@@ -1,0 +1,11 @@
+type: object
+properties:
+  eventId:
+    type: integer
+    format: int64
+  dateFrom:
+    $ref: ../common/DateTime.yaml
+  dateTo:
+    $ref: ../common/DateTime.yaml
+  pageable:
+    $ref: ../common/Pageable.yaml
