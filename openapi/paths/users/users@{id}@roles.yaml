@@ -19,8 +19,8 @@ post:
 delete:
   tags:
     - Users
-  summary: Take roles from a user
-  description: Takes a list of roles from the user referenced by id.
+  summary: Remove roles from a user
+  description: Removes a list of roles from the user referenced by id.
   requestBody:
     required: true
     content:
