@@ -3,8 +3,8 @@ parameters:
 post:
   tags:
     - Users
-  summary: Assign a user the organizer role
-  description: Assigns the organizer role to the user with given userId.
+  summary: Assign roles to a user
+  description: Assigns a list of roles to the user with given userId.
   requestBody:
     required: true
     content:
@@ -19,8 +19,8 @@ post:
 delete:
   tags:
     - Users
-  summary: Remove the organizer role from a user
-  description: Removes the organizer role from the user referenced by id.
+  summary: Take roles from a user
+  description: Takes a list of roles from the user referenced by id.
   requestBody:
     required: true
     content:
