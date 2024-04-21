@@ -13,5 +13,3 @@ properties:
     $ref: ../common/DateTime.yaml
   description:
     type: string
-  participantCount:
-    type: integer

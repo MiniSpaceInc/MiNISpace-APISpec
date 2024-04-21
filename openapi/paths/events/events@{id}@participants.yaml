@@ -1,0 +1,18 @@
+parameters:
+  - $ref: ../../components/parameters/common/Id.yaml
+post:
+  tags:
+    - Events
+  summary: Register for an event
+  description: Registers a user determined by userId included in jwt for the event referenced by **id** path parameter.
+  responses:
+    "200":
+      description: "OK"
+delete:
+  tags:
+    - Events
+  summary: Resign from participation in an event
+  description: Removes a user determined by userId included in jwt from the participants list of the event referenced by **id** path parameter.
+  responses:
+    "200":
+      description: "OK"
