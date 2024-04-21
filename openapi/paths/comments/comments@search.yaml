@@ -1,0 +1,26 @@
+post:
+  tags:
+    - Comments
+  summary: Search for comments
+  description: Searches for comments corresponding to given event or post. There should be exactly one of **postId** or **eventId** fields present.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/comments/CommentSearchDetails.yaml
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            allOf:
+              - type: object
+                properties:
+                  content:
+                    type: array
+                    items:
+                      $ref: ../../components/schemas/comments/Comment.yaml
+              - $ref: ../../components/schemas/common/PageableResponse.yaml
+                

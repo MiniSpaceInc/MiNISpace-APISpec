@@ -1,0 +1,6 @@
+type: object
+properties:
+  eventId:
+    type: integer
+  postId:
+    type: integer

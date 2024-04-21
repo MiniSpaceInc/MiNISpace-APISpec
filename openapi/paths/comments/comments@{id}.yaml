@@ -1,0 +1,10 @@
+parameters:
+  - $ref: ../../components/parameters/Id.yaml
+delete:
+  tags:
+    - Comments
+  summary: Delete a comment
+  description: Deletes a comment with given id. Users can delete only their own comments unless they have the **ADMIN** role.
+  responses:
+    "200":
+      description: "OK"

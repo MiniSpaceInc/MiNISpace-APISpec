@@ -1,0 +1,10 @@
+type: object
+properties:
+  eventId:
+    type: integer
+  postId:
+    type: integer
+  author:
+    $ref: ../users/User.yaml
+  content:
+    type: string

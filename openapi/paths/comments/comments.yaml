@@ -1,0 +1,12 @@
+post:
+  tags:
+    - Comments
+  summary: Create a comment
+  description: Creates a comment. There should be exactly one of **postId** or **eventId** fields present.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/comments/CreateComment.yaml
+                

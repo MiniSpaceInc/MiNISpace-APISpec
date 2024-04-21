@@ -56,6 +56,8 @@ tags:
     description: Operations to manage organizing units
   - name: Users
     description: Operations to manage users
+  - name: Comments
+    description: Operations to work with comments
 servers:
   - url: 'http://localhost:8080/api'
 paths:
@@ -85,6 +87,12 @@ paths:
     $ref: paths/organizingUnits/organizingUnits@roots.yaml
   /organizingUnits/{id}/children:
     $ref: paths/organizingUnits/organizingUnits@{id}@children.yaml
+  /comments:
+    $ref: paths/comments/comments.yaml
+  /comments/{id}:
+    $ref: paths/comments/comments@{id}.yaml
+  /comments/search:
+    $ref: paths/comments/comments@search.yaml
   /auth/usos/requestToken:
     $ref: paths/auth/auth@usos@requestToken.yaml
   /auth/usos/jwt:
