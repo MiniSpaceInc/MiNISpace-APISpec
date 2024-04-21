@@ -1,0 +1,34 @@
+get:
+  parameters:
+    - name: eventId
+      in: query
+      type: integer
+      description: Id of the event the post corresponds to.
+      required: true
+  tags:
+    - Posts
+  summary: Get posts corresponding to an event
+  description: Gets all posts which correspond to the event with given eventId.
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          $ref: ../../components/schemas/posts/Post.yaml
+post:
+  tags:
+    - Posts
+  description: Registers a new post.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/posts/RegisterPost.yaml
+  responses:
+    "200":
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/posts/Post.yaml
+            

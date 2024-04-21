@@ -1,5 +1,5 @@
 parameters:
-  - $ref: ../components/parameters/common/Uuid.yaml
+  - $ref: ../../components/parameters/common/Uuid.yaml
 
 get:
   tags:
@@ -12,4 +12,4 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/Events/Event.yaml
+            $ref: ../../components/schemas/Events/Event.yaml

@@ -1,0 +1,25 @@
+parameters:
+  - $ref: ../../components/parameters/common/Id.yaml
+  - name: role
+    in: query
+    required: true
+    schema:
+      $ref: ../../components/schemas/users/UserRole.yaml
+
+post:
+  tags:
+    - Users
+  summary: Assign a role to a user
+  description: Assigns a role to the user with given userId.
+  responses:
+    "200":
+      description: "OK"
+
+delete:
+  tags:
+    - Users
+  summary: Remove roles from a user
+  description: Removes a role from the user referenced by id.
+  responses:
+    "200":
+      description: "OK"

@@ -1,0 +1,16 @@
+parameters:
+  - $ref: ../../components/parameters/common/Id.yaml
+get:
+  tags:
+    - OrganizingUnits
+  summary: Get children of organizing unit
+  description: Gets all organizing units which have a parent referenced by parentId.
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../../components/schemas/organizingUnits/OrganizingUnitSearchResponse.yaml

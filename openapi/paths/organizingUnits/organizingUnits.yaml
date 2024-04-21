@@ -1,0 +1,14 @@
+post:
+  tags:
+    - OrganizingUnits
+  summary: Create a new organizing unit
+  description: Creates a new organizing unit with given parameters.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/organizingUnits/OrganizingUnit.yaml
+  responses:
+    "200":
+      description: "OK"

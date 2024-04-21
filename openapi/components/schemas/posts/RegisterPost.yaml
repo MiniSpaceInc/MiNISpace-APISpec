@@ -1,0 +1,9 @@
+type: object
+properties:
+  eventId:
+    type: integer
+    format: int64
+  content:
+    type: string
+  datePosted:
+    $ref: ../common/DateTime.yaml

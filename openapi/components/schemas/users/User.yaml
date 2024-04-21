@@ -1,0 +1,14 @@
+type: object
+properties:
+  id:
+    type: integer
+  firstName:
+    type: string
+  lastName:
+    type: string
+  studentNumber:
+    type: integer
+  isOrganizer:
+    type: boolean
+  usosId:
+    type: integer

@@ -1,0 +1,12 @@
+type: object
+properties:
+  id:
+    type: integer
+    description: Id of the unit
+  name:
+    type: string
+    minLength: 3
+    description: Name of the unit
+  parentId:
+    type: integer
+    description: Id of a parent organizing unit

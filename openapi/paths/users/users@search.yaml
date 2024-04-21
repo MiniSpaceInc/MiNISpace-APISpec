@@ -1,0 +1,26 @@
+post:
+  tags:
+    - Users
+  summary: Search for page of users
+  description: Searches for users with provided filters and sorting, returns a single pageable object of users. Available only for admin.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/users/UserSearchDetails.yaml
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            allOf:
+              - type: object
+                properties:
+                  content:
+                    type: array
+                    items:
+                      $ref: ../../components/schemas/users/User.yaml
+              - $ref: ../../components/schemas/common/PageableResponse.yaml
+                
