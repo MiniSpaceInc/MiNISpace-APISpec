@@ -1,0 +1,23 @@
+parameters:
+  - name: userId
+    in: query
+    required: false
+    schema:
+      type: integer
+get:
+  tags:
+    - OrganizingUnits
+  summary: Get organizing units of a user
+  description: |
+    If the **userId** parameter is not present - gets all organizing units a user belongs to determined by userId embedded in user's acces token.
+
+    If the **userId** parameter is present - the user is determined by this parameter. The **ADMIN** role is required to perform query with the parameter.
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../../components/schemas/organizingUnits/OrganizingUnit.yaml

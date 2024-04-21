@@ -75,14 +75,10 @@ paths:
     $ref: paths/posts/posts@{postId}.yaml
   /organizingUnits:
     $ref: paths/organizingUnits/organizingUnits.yaml
-  /organizingUnits/organizer:
-    $ref: paths/organizingUnits/organizingUnits@organizer.yaml
+  /organizingUnits/ofUser:
+    $ref: paths/organizingUnits/organizingUnits@ofUser.yaml
   /organizingUnits/{id}/user:
     $ref: paths/organizingUnits/organizingUnits@{id}@user.yaml
-  /organizingUnits/{id}/activate:
-    $ref: paths/organizingUnits/organizingUnits@{id}@activate.yaml
-  /organizingUnits/{id}/deactivate:
-    $ref: paths/organizingUnits/organizingUnits@{id}@deactivate.yaml
   /organizingUnits/roots:
     $ref: paths/organizingUnits/organizingUnits@roots.yaml
   /organizingUnits/{id}/children:
