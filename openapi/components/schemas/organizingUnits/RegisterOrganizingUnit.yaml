@@ -1,7 +1,0 @@
-type: object
-properties:
-  name:
-    type: string
-  parentId:
-    type: integer
-    format: int64

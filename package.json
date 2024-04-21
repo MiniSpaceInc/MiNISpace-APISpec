@@ -2,8 +2,7 @@
   "name": "minispace",
   "version": "1.0.0",
   "dependencies": {
-    "@redocly/openapi-cli": "^1.0.0-beta.95",
-    "openapi": "^1.0.1"
+    "@redocly/openapi-cli": "^1.0.0-beta.95"
   },
   "private": true,
   "scripts": {
