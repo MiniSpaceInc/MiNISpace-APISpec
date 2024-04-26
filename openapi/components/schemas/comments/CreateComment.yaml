@@ -4,3 +4,5 @@ properties:
     type: integer
   postId:
     type: integer
+  content:
+    type: string
