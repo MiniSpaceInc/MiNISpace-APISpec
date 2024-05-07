@@ -14,7 +14,10 @@ get:
       description: "OK"
       content:
         application/json:
-          $ref: ../../components/schemas/posts/Post.yaml
+          schema:
+            type: array
+            items:
+              $ref: ../../components/schemas/posts/Post.yaml
 post:
   tags:
     - Posts
