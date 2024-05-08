@@ -19,3 +19,5 @@ properties:
     type: array
     items:
       $ref: ../reactions/Reactions.yaml
+  userReaction:
+    $ref: ../reactions/ReactionType.yaml
