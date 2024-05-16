@@ -71,6 +71,8 @@ paths:
     $ref: paths/events/events@{id}@react.yaml
   /events/{eventId}/participants:
     $ref: paths/events/events@{id}@participants.yaml
+  /events/participatedEvents:
+    $ref: paths/events/events@participatedEvents.yaml
   /users/{id}/roles:
     $ref: paths/users/users@{id}@roles.yaml
   /users/search:

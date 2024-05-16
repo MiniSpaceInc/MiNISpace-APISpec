@@ -1,0 +1,14 @@
+get:
+  tags:
+    - Events
+  summary: Get events user is registered for
+  description: Finds UUIDs of events that user is registered for using userId included in jwt 
+  requestBody:
+    required: true
+    content:
+     application/json:
+       schema:
+        $ref: ../../components/schemas/events/SearchForRegistrations.yaml
+  responses:
+    "200":
+      description: "OK"
