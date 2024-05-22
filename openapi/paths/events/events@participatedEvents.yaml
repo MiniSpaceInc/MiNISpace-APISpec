@@ -1,14 +1,21 @@
 get:
+  parameters:
+    - in: query
+      name: searchInPast
+      required: false
+      description: Indicates if the response should contain events that took place in the past. Default value is **false**.
+      schema:
+        type: boolean
   tags:
     - Events
-  summary: Get events user is registered for
-  description: Finds UUIDs of events that user is registered for using userId included in jwt 
-  requestBody:
-    required: true
-    content:
-     application/json:
-       schema:
-        $ref: ../../components/schemas/events/SearchForRegistrations.yaml
+  summary: Get ids of events user is registered for
+  description: Finds ids of events that user is registered for using userId included in jwt.
   responses:
     "200":
       description: "OK"
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              type: integer

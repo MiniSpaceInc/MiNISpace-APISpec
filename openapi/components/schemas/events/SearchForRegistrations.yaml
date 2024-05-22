@@ -1,5 +1,0 @@
-type: object
-properties:
-  searchInPast:
-    type: boolean
-    default: false
