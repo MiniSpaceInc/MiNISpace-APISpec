@@ -1,12 +1,13 @@
 parameters:
   - $ref: ../../components/parameters/common/Id.yaml
-  - name: reactionType
-    in: query
-    required: false
-    schema:
-      $ref: ../../components/schemas/reactions/ReactionType.yaml
 
 put:
+  parameters:
+    - name: reactionType
+      in: query
+      required: false
+      schema:
+        $ref: ../../components/schemas/reactions/ReactionType.yaml
   tags:
     - Posts
   summary: React to a post.
@@ -16,5 +17,16 @@ put:
       description: Successfully created a reaction.
     "204":
       description: Successfully modified (possibly removed) a reaction.
+    "404":
+      description: The post with provided id was not found.
+
+get:
+  tags:
+    - Posts
+  summary: Get reactions for a post
+  description: Gets the list of all reaction types with user count.
+  responses:
+    "200":
+      $ref: ../../components/responses/GetReactionsResponse.yaml
     "404":
       description: The post with provided id was not found.

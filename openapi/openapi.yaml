@@ -67,8 +67,8 @@ paths:
     $ref: paths/events/events@{uuid}.yaml
   /events/search:
     $ref: paths/events/events@search.yaml
-  /events/{eventId}/react:
-    $ref: paths/events/events@{id}@react.yaml
+  /events/{eventId}/reactions:
+    $ref: paths/events/events@{id}@reactions.yaml
   /events/{eventId}/participants:
     $ref: paths/events/events@{id}@participants.yaml
   /users/{id}/roles:
@@ -79,8 +79,8 @@ paths:
     $ref: paths/posts/posts.yaml
   /posts/{postId}:
     $ref: paths/posts/posts@{postId}.yaml
-  /posts/{postId}/react:
-    $ref: paths/posts/posts@{id}@react.yaml
+  /posts/{postId}/reactions:
+    $ref: paths/posts/posts@{id}@reactions.yaml
   /organizingUnits:
     $ref: paths/organizingUnits/organizingUnits.yaml
   /organizingUnits/ofUser:

@@ -15,9 +15,5 @@ properties:
     $ref: ../common/DateTime.yaml
   content:
     type: string
-  reactionsList:
-    type: array
-    items:
-      $ref: ../reactions/Reactions.yaml
   userReaction:
     $ref: ../reactions/ReactionType.yaml
