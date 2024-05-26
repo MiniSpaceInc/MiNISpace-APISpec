@@ -1,0 +1,26 @@
+post:
+  tags:
+    - Friends
+  summary: Search for page of friends
+  description: Searches for friends page with provided page properties, returns a single pageable object of users.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/common/Pageable.yaml
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            allOf:
+              - type: object
+                properties:
+                  content:
+                    type: array
+                    items:
+                      $ref: ../../components/schemas/users/User.yaml
+              - $ref: ../../components/schemas/common/PageableResponse.yaml
+                

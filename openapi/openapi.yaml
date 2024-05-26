@@ -58,6 +58,8 @@ tags:
     description: Operations to manage users
   - name: Comments
     description: Operations to work with comments
+  - name: Friends
+    description: Operation regarding friends relationship between users
 servers:
   - url: 'http://localhost:8080/api'
 paths:
@@ -103,6 +105,14 @@ paths:
     $ref: paths/auth/auth@usos@requestToken.yaml
   /auth/usos/jwt:
     $ref: paths/auth/auth@usos@jwt.yaml
+  /friends:
+    $ref: paths/friends/friends.yaml
+  /friends/search:
+    $ref: paths/friends/friends@search.yaml
+  /friends/{id}:
+    $ref: paths/friends/friends@{id}.yaml
+  /friends/invites/{id}:
+    $ref: paths/friends/friends@invites@{id}.yaml
 # components:
 #   securitySchemes:
 #     main_auth:
