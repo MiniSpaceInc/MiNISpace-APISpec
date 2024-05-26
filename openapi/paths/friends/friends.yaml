@@ -1,0 +1,36 @@
+post:
+  tags:
+    - Friends
+  parameters:
+    - name: userUsosId
+      in: query
+      required: true
+      schema:
+        type: integer
+  summary: Invite to friends
+  description: Creates an invite to friends for another user.
+  responses:
+    "200":
+      description: OK
+get:
+  tags:
+    - Friends
+  parameters:
+    - name: eventId
+      in: query
+      required: true
+      schema:
+        type: integer
+  summary: Get friends registered for an event
+  description: Gets all friends registered for the event with provided id.
+  responses:
+    "200":
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../../components/schemas/users/User.yaml
+    "404":
+      description: No event with provided id found

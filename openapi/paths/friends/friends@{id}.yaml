@@ -1,0 +1,13 @@
+parameters:
+  - $ref: ../../components/parameters/common/Id.yaml
+
+delete:
+  tags:
+    - Friends
+  summary: Remove a user from friends
+  description: Removes the user with provided id from friends.
+  responses:
+    "204":
+      description: Removed from friends
+    "404":
+      description: User with provided id was not found
