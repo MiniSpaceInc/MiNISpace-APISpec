@@ -1,0 +1,24 @@
+parameters:
+  - $ref: ../../components/parameters/common/Id.yaml
+
+post:
+  tags:
+    - Friends
+  summary: Accept a friend request
+  description: Accepts a friend request with the provided id.
+  responses:
+    "201":
+      description: Created friends relation
+    "404":
+      description: A request with provided id was not found
+
+delete:
+  tags:
+    - Friends
+  summary: Decline a friend request
+  description: Declines and deletes a request to friends.
+  responses:
+    "201":
+      description: Created friends relation
+    "404":
+      description: A request with provided id was not found

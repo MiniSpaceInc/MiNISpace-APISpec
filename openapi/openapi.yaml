@@ -111,8 +111,8 @@ paths:
     $ref: paths/friends/friends@search.yaml
   /friends/{id}:
     $ref: paths/friends/friends@{id}.yaml
-  /friends/invites/{id}:
-    $ref: paths/friends/friends@invites@{id}.yaml
+  /friends/requests/{id}:
+    $ref: paths/friends/friends@requests@{id}.yaml
 # components:
 #   securitySchemes:
 #     main_auth:

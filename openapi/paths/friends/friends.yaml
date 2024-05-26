@@ -8,7 +8,7 @@ post:
       schema:
         type: integer
   summary: Invite to friends
-  description: Creates an invite to friends for another user.
+  description: Sends a friend request to another user.
   responses:
     "200":
       description: OK
