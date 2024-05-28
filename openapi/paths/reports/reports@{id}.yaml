@@ -1,0 +1,21 @@
+parameters:
+  - $ref: ../components/parameters/common/Id.yaml
+
+patch:
+  parameters:
+    - name: reactionType
+      in: query
+      required: true
+      schema:
+        $ref: ../../components/schemas/reports/StatusType.yaml
+  tags:
+    - Reports
+  summary: change report status.
+  description: changes report status, only for admins.
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/reports/UserReportedIssue.yaml

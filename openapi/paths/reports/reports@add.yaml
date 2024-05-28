@@ -1,0 +1,14 @@
+post:
+  tags:
+    - Reports
+  summary: Create a new report
+  description: Creates a new report with given parameters.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/reports/UserReportedIssue.yaml
+  responses:
+    "200":
+      description: "OK"

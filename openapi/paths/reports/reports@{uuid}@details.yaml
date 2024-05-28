@@ -1,0 +1,15 @@
+parameters:
+  - $ref: ../components/parameters/common/Uuid.yaml
+
+get:
+  tags:
+    - Reports
+  summary: Get reportdetails by uuid
+  description: gets details of  report with given uuid, available only for admin.
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/reports/ReportDetails.yaml
