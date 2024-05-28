@@ -1,0 +1,14 @@
+type: object
+properties:
+  id:
+    type: integer
+  uuid:
+    type: string
+    format: uuid
+  title:
+    type: string
+  description:
+    type: string
+  status:
+    $ref: StatusType.yaml
+

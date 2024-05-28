@@ -1,0 +1,25 @@
+post:
+  tags:
+    - Reports
+  summary: get unresolved reports
+  description: returns page of unresolved reports, only available for admins
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/common/Pageable.yaml
+  responses:
+    "200":
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            allOf:
+              - type: object
+                properties:
+                  content:
+                    type: array
+                    items:
+                      $ref: ../../components/schemas/reports/UserReportedIssue.yaml
+              - $ref: ../../components/schemas/common/PageableResponse.yaml

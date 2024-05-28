@@ -60,6 +60,8 @@ tags:
     description: Operations to work with comments
   - name: Friends
     description: Operation regarding friends relationship between users
+  - name: Reports
+    description: Operations for viewing and sending reports
 servers:
   - url: 'http://localhost:8080/api'
 paths:
@@ -113,6 +115,16 @@ paths:
     $ref: paths/friends/friends@{id}.yaml
   /friends/requests/{id}:
     $ref: paths/friends/friends@requests@{id}.yaml
+  /reports/add:
+    $ref: paths/reports/reports@add.yaml
+  /reports/myReports:
+    $ref: paths/reports/reports@myReports.yaml
+  /reports/unresolved:
+    $ref: paths/reports/reports@unresolved.yaml  
+  /reports/{uuid}/details:
+    $ref: paths/reports/reports@{uuid}@details.yaml
+  /reports/{id}:
+    $ref: paths/reports/reports@{id}.yaml         
 # components:
 #   securitySchemes:
 #     main_auth:
